@@ -145,17 +145,15 @@ linked to a custom domain secured with AWS Certificate Manager.
 
 ------------------------------------------------------------------------
 
-## Amazon Route 53
+## Domain & DNS Management (GoDaddy)
 
 ### Overview
 
-Route 53 provides DNS resolution for the custom domain and directs
-visitors to the CloudFront distribution.
+The application uses a custom domain purchased through GoDaddy. Rather than managing DNS with Amazon Route 53, the domain's DNS records were configured within GoDaddy to point traffic to the Amazon CloudFront distribution.
 
 ### Implementation
 
-DNS records were configured to point the custom domain to the CloudFront
-distribution.
+The custom domain (ebook.charless.xyz) was configured in GoDaddy by creating the required DNS records that route user requests to the CloudFront distribution. Once DNS propagation completed, the website became accessible through the custom domain over HTTPS.
 
 ### Screenshot
 
