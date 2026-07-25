@@ -31,13 +31,14 @@ performs a dedicated responsibility.
 
 # 🎯 Project Objectives
 
--   Build a fully serverless web application on AWS.
--   Host a responsive landing page using Amazon S3.
--   Deliver content globally with Amazon CloudFront.
--   Expose a REST API through Amazon API Gateway.
--   Process requests with AWS Lambda.
--   Send automated email notifications using Amazon SES.
--   Monitor application execution with Amazon CloudWatch.
+-Build a fully serverless web application on AWS.
+-Host a responsive landing page using Amazon S3.
+-Deliver content globally with Amazon CloudFront.
+-Expose a REST API through Amazon API Gateway.
+-Process contact form submissions with AWS Lambda.
+-Persist customer enquiries in Amazon DynamoDB for durable storage and future retrieval.
+-Send automated email notifications using Amazon SES.
+-Monitor application execution and troubleshoot issues using Amazon CloudWatch.
 
 ------------------------------------------------------------------------
 
@@ -62,7 +63,7 @@ performs a dedicated responsibility.
 User
  │
  ▼
-Route 53
+GoDaddy (DNS)
  │
  ▼
 CloudFront
@@ -78,15 +79,18 @@ API Gateway
  │
  ▼
 AWS Lambda
+ ├──────────────► Amazon DynamoDB
+ │                    │
+ │                    ▼
+ │             Store Contact Record
  │
- ▼
-Amazon SES
- │
- ▼
-Email Notification
- │
- ▼
-CloudWatch Logs
+ └──────────────► Amazon SES
+                      │
+                      ▼
+              Email Notification
+                      │
+                      ▼
+              CloudWatch Logs
 ```
 
 ------------------------------------------------------------------------
