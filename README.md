@@ -20,9 +20,9 @@ a scalable, secure and cost-effective architecture.
 
 # 🏗️ Solution Architecture
 
-> Replace with your architecture diagram.
 
-![Architecture](screenshots/architecture-diagram.png)
+![<img width="1690" height="931" alt="serverless project " src="https://github.com/user-attachments/assets/7d2fced7-8a09-4f15-b0d5-2d344a660722" />
+)
 
 The architecture follows an event-driven design where each AWS service
 performs a dedicated responsibility.
@@ -44,17 +44,19 @@ performs a dedicated responsibility.
 
 # ☁️ AWS Services Used
 
-  Service                   Purpose
-  ------------------------- --------------------------
-  Amazon S3                 Static website hosting
-  Amazon CloudFront         Content delivery network
-  Amazon Route 53           Custom domain & DNS
-  AWS Certificate Manager   HTTPS certificate
-  Amazon API Gateway        REST API
-  AWS Lambda                Backend logic
-  Amazon SES                Email notifications
-  Amazon CloudWatch         Monitoring
+ ## 🛠️ AWS Services Used
 
+| **Service** | **Purpose** |
+|-------------|-------------|
+| **GoDaddy** | Custom domain registration and DNS management |
+| **Amazon S3** | Hosts the static website frontend |
+| **Amazon CloudFront** | Delivers website content globally with low latency and HTTPS support |
+| **AWS Certificate Manager (ACM)** | Provides the SSL/TLS certificate used by CloudFront |
+| **Amazon API Gateway** | Exposes a secure REST API endpoint for contact form submissions |
+| **AWS Lambda** | Processes incoming requests, validates data, stores records, and triggers email notifications |
+| **Amazon DynamoDB** | Stores contact form submissions as persistent NoSQL records for future retrieval and analysis |
+| **Amazon Simple Email Service (SES)** | Sends automated email notifications when new enquiries are received |
+| **Amazon CloudWatch** | Collects logs and monitors Lambda execution for troubleshooting and operational visibility |
 ------------------------------------------------------------------------
 
 # 🔄 End-to-End Request Flow
@@ -123,7 +125,8 @@ application changes were made.
 
 ### Screenshot
 
-![Amazon S3](screenshots/s3-hosting.png)
+![<img width="1136" height="630" alt="s3 bucket" src="https://github.com/user-attachments/assets/f9b01445-2a16-407f-8f1e-f855ed2ccf3a" />
+)
 
 *Figure 1. Amazon S3 bucket configured to host the static website.*
 
@@ -143,7 +146,8 @@ linked to a custom domain secured with AWS Certificate Manager.
 
 ### Screenshot
 
-![CloudFront](screenshots/cloudfront-distribution.png)
+![CloudFront (<img width="1433" height="521" alt="cloudfront1" src="https://github.com/user-attachments/assets/25ac1dd5-cff3-4c33-944c-bd155a73ea87" />
+)
 
 *Figure 2. CloudFront distribution delivering the website over HTTPS.*
 
@@ -161,9 +165,10 @@ The custom domain (ebook.charless.xyz) was configured in GoDaddy by creating the
 
 ### Screenshot
 
-![Route53](screenshots/route53.png)
+![<img width="1438" height="71" alt="go daddy" src="https://github.com/user-attachments/assets/26f95682-4388-4957-bcc9-b0b6c3dd8f06" />
+)
 
-*Figure 3. Route 53 DNS configuration.*
+*Figure 3. Godaddy DNS configuration.*
 
 ------------------------------------------------------------------------
 
@@ -181,7 +186,8 @@ CloudFront distribution.
 
 ### Screenshot
 
-![ACM](screenshots/acm-certificate.png)
+![ACM] <img width="1125" height="374" alt="certificate manager" src="https://github.com/user-attachments/assets/2e47fe2a-29fb-4089-9c1b-032b7177c2ee" />
+)
 
 *Figure 4. SSL certificate issued through AWS Certificate Manager.*
 
@@ -201,9 +207,20 @@ and CORS were configured to allow requests from the frontend.
 
 ### Screenshot
 
-![API Gateway](screenshots/api-gateway.png)
+![<img width="1440" height="900" alt="API" src="https://github.com/user-attachments/assets/c38cf43a-67c4-42c5-a3a3-d87e37aeea7c" />
+)
 
 *Figure 5. REST API integrated with AWS Lambda.*
+
+### API Testing
+
+The REST API was tested using a cURL POST request with a JSON payload. The API successfully returned an HTTP 200 response, confirming that API Gateway correctly invoked the Lambda function.
+
+**Screenshot**
+<img width="818" height="257" alt="THIS" src="https://github.com/user-attachments/assets/2ce5b09c-6580-4ee6-92de-fd333441858b" />
+
+
+**Figure 6. Successful API Gateway POST request tested using cURL (HTTP 200).**
 
 ------------------------------------------------------------------------
 
@@ -222,9 +239,10 @@ successful response.
 
 ### Screenshot
 
-![Lambda](screenshots/lambda-function.png)
+![Lambda] <img width="1435" height="715" alt="lamb" src="https://github.com/user-attachments/assets/4e6cb776-1d3a-494c-af9c-aa21a603aa33" />
+)
 
-*Figure 6. Lambda function processing contact form requests.*
+*Figure 7. Lambda function successfully processing contact form requests and returning a successful HTTP 200 response.*
 
 ------------------------------------------------------------------------
 
@@ -244,7 +262,7 @@ was granted permission to send emails.
 
 ![SES](screenshots/ses-verified-email.png)
 
-*Figure 7. Verified Amazon SES identity.*
+*Figure 8. Verified Amazon SES identity.*
 
 ------------------------------------------------------------------------
 
@@ -255,7 +273,7 @@ Lambda and SES are successfully integrated.
 
 ![Success](screenshots/form-success.png)
 
-*Figure 8. Successful end-to-end request.*
+*Figure 9. Successful end-to-end request.*
 
 ------------------------------------------------------------------------
 
@@ -266,7 +284,7 @@ processed by Lambda and delivered by Amazon SES.
 
 ![Email](screenshots/email-notification.png)
 
-*Figure 9. Email notification received.*
+*Figure 10. Email notification received.*
 
 ------------------------------------------------------------------------
 
@@ -277,7 +295,7 @@ execution and troubleshoot runtime issues.
 
 ![CloudWatch](screenshots/cloudwatch-success.png)
 
-*Figure 10. Successful Lambda execution recorded in CloudWatch.*
+*Figure 11. Successful Lambda execution recorded in CloudWatch.*
 
 ------------------------------------------------------------------------
 
