@@ -10,19 +10,6 @@ When a user submits the Get Free Ebook form, the request is securely routed thro
 
 The solution eliminates the need to manage backend servers while providing a scalable, secure, and cost-effective cloud-native architecture.
 
-
-# ✨ ## Key Features
-Fully serverless architecture hosted on AWS
-Static website hosting using Amazon S3
-Global content delivery with Amazon CloudFront
-Custom domain managed through GoDaddy
-HTTPS secured with AWS Certificate Manager (ACM)
-REST API built with Amazon API Gateway
-Serverless backend using AWS Lambda
-Contact form submissions stored in Amazon DynamoDB
-Automated email notifications with Amazon SES
-Monitoring and logging using Amazon CloudWatch
-
 ------------------------------------------------------------------------
 
 # 🏗️ Solution Architecture
@@ -52,8 +39,6 @@ The solution follows an event-driven architecture where each AWS service perform
 ------------------------------------------------------------------------
 
 # ☁️ AWS Services Used
-
- ## 🛠️ AWS Services Used
 
 | **Service** | **Purpose** |
 |-------------|-------------|
@@ -268,11 +253,11 @@ The application is deployed as a fully serverless web application on Amazon S3 a
 <img width="1438" height="860" alt="live app" src="https://github.com/user-attachments/assets/ae490442-53de-4e4b-a0f8-02fac734f6f5" />
 
 
-*Figure 8. Live serverless contact form successfully processing a user submission and displaying a confirmation message, demonstrating the end-to-end integration of Amazon S3, CloudFront, API Gateway, AWS Lambda, DynamoDB, and Amazon SES.
+*Figure 8. Live serverless contact form successfully processing a user submission and displaying a confirmation message, demonstrating the end-to-end integration of Amazon S3, CloudFront, API Gateway, AWS Lambda, DynamoDB, and Amazon SES.*
 
 ------------------------------------------------------------------------
 
-## Email Notifications (Amazon SES)
+## Amazon SES
 
 Amazon SES is used to send email notifications whenever a visitor submits the contact form. The Lambda function formats the submission details and delivers them to the configured email address in real time.
 
