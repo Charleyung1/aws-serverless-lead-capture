@@ -345,23 +345,18 @@ The project also reinforced the importance of IAM permissions, CORS configuratio
 
 # 🙏 Acknowledgements
 
-## Template Attribution
+The frontend landing page was adapted from the **TemplateMo eBook Landing** template.
 
-- The frontend is based on the **TemplateMo eBook Landing** template.
-- The original template has been customised and extended for this project.
-- Please refer to the **TemplateMo License** for the original licensing terms:
-  https://templatemo.com/license
+The AWS serverless architecture, backend implementation, API integration, infrastructure configuration, testing, documentation, and deployment were designed and implemented as part of this project.
 
-## Project Contributions
+------------------------------------------------------------------------
 
-The AWS serverless architecture, backend implementation, Amazon API Gateway integration, AWS Lambda functions, Amazon DynamoDB integration, Amazon SES email notifications, deployment, documentation, and project-specific enhancements were designed and implemented by **Charles Ekairia**.
+## 👨‍💻 Author
 
----
+**Charles Ekairia**
 
-# 👨‍💻 Author
-
-**Charles Ekairia**  
 Cloud & DevOps Engineer
 
-- **GitHub:** https://github.com/charleyung1
-- **LinkedIn:** https://www.linkedin.com/in/charles-ekairia-44797821b
+GitHub: https://github.com/charleyung1
+
+LinkedIn: https://www.linkedin.com/in/charles-ekairia-44797821b
