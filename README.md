@@ -14,7 +14,7 @@ The solution eliminates the need to manage backend servers while providing a sca
 
 # 🏗️ Solution Architecture
 
-![Architecture](screenshots/aws-serverless-architecture.png)
+![Architecture](architecture/aws-serverless-architecture.png)
 
 
 The solution follows an event-driven architecture where each AWS service performs a dedicated responsibility to deliver a scalable and highly available serverless application.
