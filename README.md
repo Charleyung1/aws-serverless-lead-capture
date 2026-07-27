@@ -120,8 +120,7 @@ application changes were made.
 
 ### Screenshot
 
-![<img width="1136" height="630" alt="s3 bucket" src="https://github.com/user-attachments/assets/f9b01445-2a16-407f-8f1e-f855ed2ccf3a" />
-)
+![Amazon S3](screenshots/s3.png)
 
 *Figure 1. Amazon S3 bucket configured to host the static website.*
 
@@ -141,8 +140,7 @@ linked to a custom domain secured with AWS Certificate Manager.
 
 ### Screenshot
 
-![CloudFront (<img width="1433" height="521" alt="cloudfront1" src="https://github.com/user-attachments/assets/25ac1dd5-cff3-4c33-944c-bd155a73ea87" />
-)
+![CloudFront](screenshots/cloudfront.png)
 
 *Figure 2. CloudFront distribution delivering the website over HTTPS.*
 
@@ -160,8 +158,7 @@ The custom domain (ebook.charless.xyz) was configured in GoDaddy by creating the
 
 ### Screenshot
 
-![<img width="1438" height="71" alt="go daddy" src="https://github.com/user-attachments/assets/26f95682-4388-4957-bcc9-b0b6c3dd8f06" />
-)
+![GoDaddy](screenshots/godaddy.png)
 
 *Figure 3. Godaddy DNS configuration.*
 
@@ -181,8 +178,7 @@ CloudFront distribution.
 
 ### Screenshot
 
-![ACM] <img width="1125" height="374" alt="certificate manager" src="https://github.com/user-attachments/assets/2e47fe2a-29fb-4089-9c1b-032b7177c2ee" />
-)
+![ACM Certificate](screenshots/acm.png)
 
 *Figure 4. SSL certificate issued through AWS Certificate Manager.*
 
@@ -202,8 +198,7 @@ and CORS were configured to allow requests from the frontend.
 
 ### Screenshot
 
-![<img width="1440" height="900" alt="API" src="https://github.com/user-attachments/assets/c38cf43a-67c4-42c5-a3a3-d87e37aeea7c" />
-)
+![API Gateway](screenshots/api-gateway.png)
 
 *Figure 5. REST API integrated with AWS Lambda.*
 
@@ -212,7 +207,8 @@ and CORS were configured to allow requests from the frontend.
 The REST API was tested using a cURL POST request with a JSON payload. The API successfully returned an HTTP 200 response, confirming that API Gateway correctly invoked the Lambda function.
 
 **Screenshot**
-<img width="818" height="257" alt="THIS" src="https://github.com/user-attachments/assets/2ce5b09c-6580-4ee6-92de-fd333441858b" />
+
+![cURL Test](screenshots/curl-test.png)
 
 
 **Figure 6. Successful API Gateway POST request tested using cURL (HTTP 200).**
@@ -234,8 +230,7 @@ successful response.
 
 ### Screenshot
 
-![Lambda] <img width="1435" height="715" alt="lamb" src="https://github.com/user-attachments/assets/4e6cb776-1d3a-494c-af9c-aa21a603aa33" />
-)
+![Lambda Function](screenshots/lambda.png)
 
 *Figure 7. Lambda function successfully processing contact form requests and returning a successful HTTP 200 response.*
 
@@ -250,7 +245,7 @@ The application is deployed as a fully serverless web application on Amazon S3 a
 
 ### Screenshot
 
-<img width="1438" height="860" alt="live app" src="https://github.com/user-attachments/assets/ae490442-53de-4e4b-a0f8-02fac734f6f5" />
+![Live Application](screenshots/live-application.png)
 
 
 *Figure 8. Live serverless contact form successfully processing a user submission and displaying a confirmation message, demonstrating the end-to-end integration of Amazon S3, CloudFront, API Gateway, AWS Lambda, DynamoDB, and Amazon SES.*
@@ -265,8 +260,7 @@ Amazon SES is used to send email notifications whenever a visitor submits the co
 
 After a successful form submission, Lambda invokes Amazon SES to send an email containing the user's contact information and message. This provides immediate notification without requiring users to log into the application.
 
-![Email   <img width="1129" height="287" alt="Email" src="https://github.com/user-attachments/assets/078f65b1-ee5c-48df-9b28-316db35fba92" />
-)
+![Amazon SES](screenshots/ses-email.png)
 
 *Figure 9. Email notification successfully delivered by Amazon SES after a contact form submission.*
 
@@ -282,7 +276,7 @@ After API Gateway invokes the Lambda function, the submitted form data is valida
 
 ### Screenshot
 
-!<img width="818" height="367" alt="dyna" src="https://github.com/user-attachments/assets/38afcf17-33bf-4bf0-8e4b-8f846b04d990" />
+![DynamoDB](screenshots/dynamodb.png)
 
 
 *Figure 10. Amazon DynamoDB table showing contact form submissions successfully stored after processing requests through the serverless application.*
