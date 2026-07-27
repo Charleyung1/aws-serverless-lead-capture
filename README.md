@@ -14,9 +14,8 @@ The solution eliminates the need to manage backend servers while providing a sca
 
 # 🏗️ Solution Architecture
 
+![Architecture](screenshots/aws-serverless-architecture.png)
 
-![<img width="1690" height="931" alt="serverless project " src="https://github.com/user-attachments/assets/7d2fced7-8a09-4f15-b0d5-2d344a660722" />
-)
 
 The solution follows an event-driven architecture where each AWS service performs a dedicated responsibility to deliver a scalable and highly available serverless application.
 
@@ -178,7 +177,7 @@ CloudFront distribution.
 
 ### Screenshot
 
-![ACM Certificate](screenshots/acm.png)
+![ACM Certificate](screenshots/acm-certificate.png)
 
 *Figure 4. SSL certificate issued through AWS Certificate Manager.*
 
