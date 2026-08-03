@@ -12,6 +12,25 @@ The solution eliminates the need to manage backend servers while providing a sca
 
 ------------------------------------------------------------------------
 
+# 💼 Business Value
+
+Many small businesses, consultants, startups, and marketing teams need an efficient way to capture customer enquiries without managing backend infrastructure or relying on expensive third-party lead generation platforms.
+
+This project demonstrates how a fully serverless AWS architecture can deliver a scalable, secure, and cost-effective lead capture solution using managed cloud services. By leveraging Amazon S3, Amazon CloudFront, Amazon API Gateway, AWS Lambda, Amazon DynamoDB, and Amazon SES, businesses can automate enquiry collection while reducing operational overhead and maintaining full ownership of their application and customer data.
+
+### Business Benefits
+
+- Reduces operational overhead by eliminating the need to provision and maintain backend servers.
+- Automatically scales to handle varying levels of website traffic using AWS managed services.
+- Provides a cost-effective pay-per-use architecture that helps minimize infrastructure costs.
+- Stores customer enquiries securely in Amazon DynamoDB for future follow-up and reporting.
+- Sends real-time email notifications through Amazon SES, enabling faster responses to customer enquiries.
+- Gives organizations complete ownership of their infrastructure and customer data without vendor lock-in.
+
+------------------------------------------------------------------------
+
+
+
 # 🏗️ Solution Architecture
 
 ![Architecture](architecture/aws-serverless-architecture.png)
